@@ -1,11 +1,11 @@
 # HSPlayer
 
 > HSPlayer是对IJKMediaPlayer的封装, 支持基础的视频播放功能, 包括
-
-1. 横/竖屏切换
-2. 视频进度条
-3. https地址的视频播放
-4. ...
+![HSplayer](https://github.com/ApeHC/HSPlayer/blob/master/HSPlayerDemo/HSPlayerImage.PNG)
+- [x] 横/竖屏切换
+- [x] 视频进度条管理
+- [x] https地址的视频播放
+- [x] ...
 
 *为了方便大家使用,IJKMediaPlayer已经打包成framework,且支持了https的视频播放 (下载地址:)*
 
