@@ -6,19 +6,20 @@
 
 ### 注意事项
 
-* 横竖屏旋转需要打开 Landscape Left和Landscape Right , 否则无法旋转屏幕
-* 使用IJKMediaPlayer需要添加以下依赖库
-   AudioToolbox.framework
-   AVFoundation.framework
-   CoreGraphics.framework
-   CoreMedia.framework
-   CoreVideo.framework
-   libbz2.tbd
-   libc++.tbd
-   libz.tbd
-   MediaPlayer.framework
-   MobileCoreServices.framework
-   OpenGLES.framework
-   QuartzCore.framework
-   UIKit.framework
-   VideoToolbox.framework
+1. 横竖屏旋转需要打开 Landscape Left和Landscape Right , 否则无法旋转屏幕
+2. HSPlayer使用了Masonry布局, 因此项目需要导入Masonry
+3. 使用IJKMediaPlayer需要添加以下依赖库
+   * AudioToolbox.framework
+   * AVFoundation.framework
+   * CoreGraphics.framework
+   * CoreMedia.framework
+   * CoreVideo.framework
+   * libbz2.tbd
+   * libc++.tbd
+   * libz.tbd
+   * MediaPlayer.framework
+   * MobileCoreServices.framework
+   * OpenGLES.framework
+   * QuartzCore.framework
+   * UIKit.framework
+   * VideoToolbox.framework
