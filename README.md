@@ -4,9 +4,10 @@
 
 1. 横/竖屏切换
 2. 视频进度条
-3. https地址的视频播放等
+3. https地址的视频播放
+4. ...
 
-***为了方便大家使用,IJKMediaPlayer已经打包成framework,且支持了https的视频播放 (下载地址:)***
+*为了方便大家使用,IJKMediaPlayer已经打包成framework,且支持了https的视频播放 (下载地址:)*
 
 ### 注意事项
 
