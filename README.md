@@ -9,9 +9,9 @@
 - [x] https地址的视频播放
 - [x] ...
 
-*为了方便大家使用,IJKMediaPlayer已经打包成framework,且支持了https的视频播放 (下载地址:)*
+*为了方便大家使用,IJKMediaPlayer已经打包成framework,且支持了https的视频播放 [点击下载](http://pan.baidu.com/s/1o7LLQC6),集成到项目中即可使用*
 
-### 注意事项
+### 使用方法
 
 1. 横竖屏旋转需要打开 Landscape Left和Landscape Right , 否则无法旋转屏幕 
    ![Landscape Left和Landscape Right](https://github.com/ApeHC/HSPlayer/blob/master/HSPlayerDemo/Landscape.png)
@@ -31,3 +31,4 @@
    * QuartzCore.framework
    * UIKit.framework
    * VideoToolbox.framework
+4. 详情见Demo
