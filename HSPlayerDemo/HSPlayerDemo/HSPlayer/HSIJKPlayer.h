@@ -3,11 +3,10 @@
 //  HelloSTV
 //
 //  Created by HeChuang⌚️ on 2017/10/26.
-//  Copyright © 2017年 传输事业部. All rights reserved.
+//  Copyright © 2017年 HeChuang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import <IJKMediaFramework/IJKMediaFramework.h>
 #import "HSIJKPlayerToolsView.h"
 #import "HSIJKPlayerControl.h"
 
@@ -50,8 +49,6 @@ typedef NS_ENUM(NSInteger, HSPlayerStatus) {
 HSIJKPlayerBottomBarDelegate,
 HSPauseOrPlayDelegate,
 UIGestureRecognizerDelegate>
-//IJKMedia
-@property (nonatomic, strong) id <IJKMediaPlayback> player;
 //播放状态
 @property (nonatomic, assign, readonly) HSPlayerStatus status;
 //是否播放

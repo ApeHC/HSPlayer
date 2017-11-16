@@ -3,7 +3,7 @@
 //  HelloSTV
 //
 //  Created by HeChuang⌚️ on 2017/11/1.
-//  Copyright © 2017年 传输事业部. All rights reserved.
+//  Copyright © 2017年 HeChuang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

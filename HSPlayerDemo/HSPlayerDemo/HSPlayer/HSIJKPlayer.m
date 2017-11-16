@@ -3,10 +3,12 @@
 //  HelloSTV
 //
 //  Created by HeChuang⌚️ on 2017/10/26.
-//  Copyright © 2017年 传输事业部. All rights reserved.
+//  Copyright © 2017年 HeChuang. All rights reserved.
 //
 
 #import "HSIJKPlayer.h"
+#import <IJKMediaFramework/IJKMediaFramework.h>
+#import <Masonry.h>
 
 @interface HSIJKPlayer ()
 @property (nonatomic, strong) UIActivityIndicatorView * activityView;
@@ -14,6 +16,7 @@
 @property (nonatomic, strong) HSIJKPlayerControl * ControlPlayView;
 @property (nonatomic, strong) NSTimer * playTimer;
 @property (nonatomic, strong) UIView * BackgroundView;
+@property (nonatomic, strong) id <IJKMediaPlayback> player;
 @end
 
 static NSInteger count = 0;//用于计时, 5s隐藏工具栏
@@ -188,14 +191,17 @@ static NSInteger count = 0;//用于计时, 5s隐藏工具栏
     if ((loadState & IJKMPMovieLoadStatePlaythroughOK) != 0) {
         [self.activityView stopAnimating];
         _isPlaying = YES;
+        self.ControlPlayView.imageBtn.hidden = NO;
         NSLog(@"IJKMPMoviePlayerLoadStateDidChangeNotification: 通过");
     } else if ((loadState & IJKMPMovieLoadStateStalled) != 0) {
         [self.activityView startAnimating];
         _isPlaying = NO;
+        self.ControlPlayView.imageBtn.hidden = YES;
         NSLog(@"IJKMPMoviePlayerLoadStateDidChangeNotification: 停滞");
     } else {
         [self.activityView startAnimating];
         _isPlaying = NO;
+        self.ControlPlayView.imageBtn.hidden = NO;
         NSLog(@"IJKMPMoviePlayerLoadStateDidChangeNotification: unknow");
     }
 }

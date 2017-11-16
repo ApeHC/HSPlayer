@@ -3,10 +3,11 @@
 //  HelloSTV
 //
 //  Created by HeChuang⌚️ on 2017/11/1.
-//  Copyright © 2017年 传输事业部. All rights reserved.
+//  Copyright © 2017年 HeChuang. All rights reserved.
 //
 
 #import "HSIJKPlayerToolsView.h"
+#import <Masonry.h>
 
 @interface HSIJKPlayerToolsView ()
 @property (nonatomic, strong) UILabel * timeLabel;
@@ -176,7 +177,7 @@ static NSInteger padding = 8;//组件间隔
 - (UISlider *)slider{
     if (!_slider) {
         _slider = [[UISlider alloc]init];
-        [_slider setThumbImage:[UIImage imageNamed:@"knob"] forState:UIControlStateNormal];
+        [_slider setThumbImage:[UIImage imageNamed:@"HSMediaPlayerResource.bundle/knob"] forState:UIControlStateNormal];
         _slider.continuous = YES;
         self.tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleTap:)];
         [_slider addTarget:self action:@selector(handleSliderPosition:) forControlEvents:UIControlEventValueChanged];
@@ -191,7 +192,7 @@ static NSInteger padding = 8;//组件间隔
     if (_screenButton == nil) {
         _screenButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _screenButton.contentMode = UIViewContentModeScaleToFill;
-        [_screenButton setImage:[UIImage imageNamed:@"full_screen"] forState:UIControlStateNormal];
+        [_screenButton setImage:[UIImage imageNamed:@"HSMediaPlayerResource.bundle/full_screen"] forState:UIControlStateNormal];
         [_screenButton addTarget:self action:@selector(handleLargeBtn:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _screenButton;
